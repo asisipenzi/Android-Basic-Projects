@@ -1,0 +1,4 @@
+#Mon Feb 10 18:11:50 CAT 2020
+base.0=/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/PracticeSet2/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

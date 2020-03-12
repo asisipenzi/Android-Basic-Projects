@@ -16,7 +16,12 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_16" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_24" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -25,18 +30,8 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/courtcounter/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -62,12 +57,64 @@
     <option name="height" value="740" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CourtCounter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CourtCounter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="CourtCounter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CourtCounter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="CourtCounter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CourtCounter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CourtCounter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CourtCounter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CourtCounter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CourtCounter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CourtCounter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CourtCounter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="courtcounter" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_24" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-12T09:30:25.845Z" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -95,7 +142,7 @@
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="true" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
@@ -161,7 +208,7 @@
     <frame x="0" y="28" width="1366" height="740" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4986945" weight="0.20574887" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4986945" visible="true" weight="0.20574887" />
       <window_info id="Structure" order="2" sideWeight="0.50130546" side_tool="true" weight="0.20574887" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -191,21 +238,8 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/courtcounter/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">

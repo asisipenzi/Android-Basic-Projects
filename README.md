@@ -1,1 +1,1 @@
-Project files for the tasks completed so far.
+Project files for the Udacity Android Basics Course.

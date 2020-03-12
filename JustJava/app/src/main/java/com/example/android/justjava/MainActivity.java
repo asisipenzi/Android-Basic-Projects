@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Display  message passed to the method via a TextView
+     * Display message passed to the method via a TextView
      *
      * @param message
      */

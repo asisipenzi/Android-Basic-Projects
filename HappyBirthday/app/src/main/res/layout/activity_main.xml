@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.happybirthday.MainActivity">
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/androidparty"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday Tatenda!"
+        android:textSize="36sp"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="From, Andrew!"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"/>
+
+</RelativeLayout>

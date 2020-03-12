@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.singlescreenapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="Old Cartridges and Tapes Here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"   
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:contentDescription="oldtapescartridges"
+        android:src="@drawable/storage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="About Our Business: "
+            android:textStyle="bold"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:text="We collect all your old cartridges and tapes and digitie the for you. All your memories would be lost.We do a professional job"
+            android:textSize="28sp"
+            android:textStyle="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="Email: oct@gmail.com"
+            android:textSize="28sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:textStyle="bold"
+            android:text="Address:"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:text="28 St. Andrew's Road, Hatfield, Harare"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+</LinearLayout>

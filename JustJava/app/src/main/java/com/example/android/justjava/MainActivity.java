@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.os.Bundle;
 
@@ -16,7 +17,6 @@ import java.text.NumberFormat;
  */
 public class MainActivity extends AppCompatActivity {
     int quantity = 2;
-    boolean mChecked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +28,40 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is pressed.
      */
     public void submitOrder(View view) {
+        //Check if user wants whipped cream
         CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
         boolean hasWhippedCream = whippedCreamCheckBox.isChecked();
-        int price = calculatePrice();
-        displayMessage(createOrderSummary(price, hasWhippedCream));
+
+        //Check if user wants chocolate
+        CheckBox chocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkbox);
+        boolean hasChocolate = chocolateCheckBox.isChecked();
+
+        //Get user name
+        EditText nameEditText = (EditText) findViewById(R.id.name_edittext);
+        String customerName = nameEditText.getText().toString();
+
+        //Calculate price for the drinks
+        int price = calculatePrice(hasChocolate, hasWhippedCream);
+        displayMessage(createOrderSummary(price, hasWhippedCream, hasChocolate, customerName));
     }
 
     /**
      * calculates the price of the order
-     *
-     * @return price
+     * @param chocPrice price of chocolate in a drink
+     * @param whippedPrice price of whipped cream in a drink
+     * @return price total price of the drinks ordered
      */
-    private int calculatePrice() {
-        return quantity * 5;
+    private int calculatePrice(boolean chocPrice, boolean whippedPrice) {
+        int total = 0;
+
+        if (chocPrice == true) {
+            total += 2;
+        }
+
+        if (whippedPrice == true) {
+            total += 1;
+        }
+        return quantity * (5 + total);
     }
 
 
@@ -55,13 +76,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * @param price of the order
-     * @param addWhippedCream is whether or not the user wants whipped cream topping
+     * @param price           of the order
+     * @param addWhippedCream whether or not the user wants whipped cream topping
+     * @param addChocolate    whether or not the user wants whipped cream topping
+     * @param addCustomerName adds the customer name to the order summary
      * @return Order summary
      */
-    private String createOrderSummary(int price, boolean addWhippedCream) {
-        String summaryMessage = "Name: Andrew Sisipenzi" +"\nAdd Whipped Cream? " + addWhippedCream
-                +"\nQuantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
+    private String createOrderSummary(int price, boolean addWhippedCream, boolean addChocolate,
+                                      String addCustomerName) {
+        String summaryMessage = "Name: " + addCustomerName +
+                "\nAdd Whipped Cream? " + addWhippedCream +
+                "\nAdd Chocolate? " + addChocolate +
+                "\nQuantity: " + quantity +
+                "\nTotal: $" + price +
+                "\nThank you!";
         return summaryMessage;
 
     }

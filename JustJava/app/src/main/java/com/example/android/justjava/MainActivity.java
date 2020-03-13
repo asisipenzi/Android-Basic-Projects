@@ -2,12 +2,14 @@ package com.example.android.justjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -47,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * calculates the price of the order
-     * @param chocPrice price of chocolate in a drink
+     *
+     * @param chocPrice    price of chocolate in a drink
      * @param whippedPrice price of whipped cream in a drink
      * @return price total price of the drinks ordered
      */
@@ -110,6 +113,11 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void increment(View view) {
+        if (quantity >= 100) {
+            Toast.makeText(this, "You cannot order more than 100 cups!",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
         quantity = quantity + 1;
         displayQuantity(quantity);
     }
@@ -120,6 +128,11 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void decrement(View view) {
+        if (quantity < 2) {
+            Toast.makeText(this, "You cannot order less than 1 cup!",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
         quantity = quantity - 1;
         displayQuantity(quantity);
     }

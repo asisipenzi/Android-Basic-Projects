@@ -3,6 +3,8 @@ package com.example.android.justjava;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentSender;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
@@ -44,7 +46,19 @@ public class MainActivity extends AppCompatActivity {
 
         //Calculate price for the drinks
         int price = calculatePrice(hasChocolate, hasWhippedCream);
-        displayMessage(createOrderSummary(price, hasWhippedCream, hasChocolate, customerName));
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_SUBJECT,"JustJava order for " + customerName);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, createOrderSummary(price, hasWhippedCream, hasChocolate, customerName));
+        sendIntent.setType("text/plain");
+
+        if(sendIntent.resolveActivity(getPackageManager()) !=null) {
+            startActivity(sendIntent);
+        }
+
+//        displayMessage(createOrderSummary(price, hasWhippedCream, hasChocolate, customerName));
+
     }
 
     /**

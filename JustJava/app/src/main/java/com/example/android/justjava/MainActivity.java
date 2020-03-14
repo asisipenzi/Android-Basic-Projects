@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
+import android.net.Uri;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
         int price = calculatePrice(hasChocolate, hasWhippedCream);
 
         Intent sendIntent = new Intent();
-        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.setAction(Intent.ACTION_SENDTO);
+        sendIntent.setData(Uri.parse("mailto"));
         sendIntent.putExtra(Intent.EXTRA_SUBJECT,"JustJava order for " + customerName);
         sendIntent.putExtra(Intent.EXTRA_TEXT, createOrderSummary(price, hasWhippedCream, hasChocolate, customerName));
         sendIntent.setType("text/plain");
@@ -56,9 +58,6 @@ public class MainActivity extends AppCompatActivity {
         if(sendIntent.resolveActivity(getPackageManager()) !=null) {
             startActivity(sendIntent);
         }
-
-//        displayMessage(createOrderSummary(price, hasWhippedCream, hasChocolate, customerName));
-
     }
 
     /**
@@ -109,16 +108,6 @@ public class MainActivity extends AppCompatActivity {
                 "\nThank you!";
         return summaryMessage;
 
-    }
-
-    /**
-     * Display message passed to the method via a TextView
-     *
-     * @param message
-     */
-    private void displayMessage(String message) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        orderSummaryTextView.setText(message);
     }
 
     /**

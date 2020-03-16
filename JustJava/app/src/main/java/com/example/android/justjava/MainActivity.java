@@ -2,6 +2,7 @@ package com.example.android.justjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
@@ -96,14 +97,15 @@ public class MainActivity extends AppCompatActivity {
      * @param addCustomerName adds the customer name to the order summary
      * @return Order summary
      */
+    @SuppressLint("StringFormatInvalid")
     private String createOrderSummary(int price, boolean addWhippedCream, boolean addChocolate,
                                       String addCustomerName) {
 
-        String summaryMessage = getString(R.string.order_summary_name) + "\n" + addCustomerName;
-                summaryMessage += "\n" + getString(R.string.add_whipped_cream) + " " + addWhippedCream;
-                summaryMessage += "\n" + getString(R.string.add_chocolate) + " " + addChocolate;
+        String summaryMessage = getString(R.string.order_summary_name, addCustomerName);
+                summaryMessage += "\n" + getString(R.string.add_whipped_cream, addWhippedCream);
+                summaryMessage += "\n" + getString(R.string.add_chocolate, addChocolate);
                 summaryMessage += "\n" + getString(R.string.quantity) + " " + quantity;
-                summaryMessage += "\n" + getString(R.string.total) + " " + price;
+                summaryMessage += "\n" + getString(R.string.total, price);
                 summaryMessage += "\n" + getString(R.string.thank_you);
         return summaryMessage;
 

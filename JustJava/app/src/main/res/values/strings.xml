@@ -37,11 +37,11 @@
     <!--    Email Subject title-->
     <string name="order_for">JustJava order for <xliff:g example="Joe Tau" id="name">%s</xliff:g></string>
     <!--Add Whipped Cream to drink-->
-    <string name="add_whipped_cream">Add Whipped Cream?</string>
+    <string name="add_whipped_cream">Add Whipped Cream?<xliff:g example="true" id="addWhippedCream">%b</xliff:g></string>
     <!--    Add Chocolate to drink-->
-    <string name="add_chocolate">Add Chocolate?</string>
+    <string name="add_chocolate">Add Chocolate?<xliff:g example="true" id="addChocolate">%b</xliff:g></string>
     <!--    Total amount for the order-->
-    <string name="total">Total: $</string>
+    <string name="total">Total: $<xliff:g example="$20" id="price">%d</xliff:g></string>
     <!--    Upper limit when increasing/ordering more drinks-->
     <string name="upper_limit_warning">You cannot order more than 100 cups!</string>
     <!--    Lower limit when decreasing/reducingnumber of drinks drinks-->

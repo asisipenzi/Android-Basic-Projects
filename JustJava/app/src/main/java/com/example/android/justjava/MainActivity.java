@@ -47,15 +47,13 @@ public class MainActivity extends AppCompatActivity {
 
         //Calculate price for the drinks
         int price = calculatePrice(hasChocolate, hasWhippedCream);
-
         Intent sendIntent = new Intent();
-        sendIntent.setAction(Intent.ACTION_SENDTO);
-        sendIntent.setData(Uri.parse("mailto"));
-        sendIntent.putExtra(Intent.EXTRA_SUBJECT,"JustJava order for " + customerName);
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.order_for, customerName));
         sendIntent.putExtra(Intent.EXTRA_TEXT, createOrderSummary(price, hasWhippedCream, hasChocolate, customerName));
         sendIntent.setType("text/plain");
 
-        if(sendIntent.resolveActivity(getPackageManager()) !=null) {
+        if (sendIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(sendIntent);
         }
     }
@@ -100,12 +98,13 @@ public class MainActivity extends AppCompatActivity {
      */
     private String createOrderSummary(int price, boolean addWhippedCream, boolean addChocolate,
                                       String addCustomerName) {
-        String summaryMessage = "Name: " + addCustomerName +
-                "\nAdd Whipped Cream? " + addWhippedCream +
-                "\nAdd Chocolate? " + addChocolate +
-                "\nQuantity: " + quantity +
-                "\nTotal: $" + price +
-                "\nThank you!";
+
+        String summaryMessage = getString(R.string.order_summary_name) + "\n" + addCustomerName;
+                summaryMessage += "\n" + getString(R.string.add_whipped_cream) + " " + addWhippedCream;
+                summaryMessage += "\n" + getString(R.string.add_chocolate) + " " + addChocolate;
+                summaryMessage += "\n" + getString(R.string.quantity) + " " + quantity;
+                summaryMessage += "\n" + getString(R.string.total) + " " + price;
+                summaryMessage += "\n" + getString(R.string.thank_you);
         return summaryMessage;
 
     }
@@ -117,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void increment(View view) {
         if (quantity >= 100) {
-            Toast.makeText(this, "You cannot order more than 100 cups!",
+            Toast.makeText(this, getString(R.string.upper_limit_warning),
                     Toast.LENGTH_SHORT).show();
             return;
         }
@@ -132,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void decrement(View view) {
         if (quantity < 2) {
-            Toast.makeText(this, "You cannot order less than 1 cup!",
+            Toast.makeText(this, getString(R.string.lower_limit_warning),
                     Toast.LENGTH_SHORT).show();
             return;
         }

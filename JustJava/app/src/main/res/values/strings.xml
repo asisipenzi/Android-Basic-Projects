@@ -1,3 +1,49 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">JustJava</string>
+
+    <!--    Header text for the list of toppings [CHAR LIMIT=20-->
+    <string name="toppings">Toppings</string>
+
+    <!--    Thank you message for the order summary [CHAR LIMIT = NONE]-->
+    <string name="thank_you">Thank You!</string>
+
+    <!--Namefor order summary. It will be shown in the format of "Name: Joe" where Joe
+    is the user's name. [CHAR LIMIT = NONE]-->
+    <string name="order_summary_name">Name: <xliff:g example="Joe Tau" id="name">%s</xliff:g></string>
+
+    <!--    NAme of the customer ordering the drinks-->
+    <string name="name">Name</string>
+
+    <!--    One of the drink toppings-->
+    <string name="whipped_cream">Whipped Cream</string>
+
+    <!--    One of the drink toppings-->
+    <string name="chocolate">Chocolate</string>
+
+    <!--    Number of drinks ordered-->
+    <string name="quantity">Quantity</string>
+
+    <!--    Decrease the number of drinks ordered-->
+    <string name="decrement" translatable="false">-</string>
+
+    <!--    Quantity of ordered drinks-->
+    <string name="_2" translatable="false">2</string>
+
+    <!--    Increase the number of drinks ordered-->
+    <string name="increment" translatable="false">+</string>
+
+    <!--    Order button label-->
+    <string name="order">Order</string>
+    <!--    Email Subject title-->
+    <string name="order_for">JustJava order for <xliff:g example="Joe Tau" id="name">%s</xliff:g></string>
+    <!--Add Whipped Cream to drink-->
+    <string name="add_whipped_cream">Add Whipped Cream?</string>
+    <!--    Add Chocolate to drink-->
+    <string name="add_chocolate">Add Chocolate?</string>
+    <!--    Total amount for the order-->
+    <string name="total">Total: $</string>
+    <!--    Upper limit when increasing/ordering more drinks-->
+    <string name="upper_limit_warning">You cannot order more than 100 cups!</string>
+    <!--    Lower limit when decreasing/reducingnumber of drinks drinks-->
+    <string name="lower_limit_warning">You cannot order less than 1 cup!</string>
 </resources>

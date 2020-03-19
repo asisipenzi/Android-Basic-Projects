@@ -178,14 +178,12 @@
                 android:id="@+id/answer_11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Er fragt, ob sie ihm sagen könne, wann der nächste Bus fährt." />
 
             <RadioButton
                 android:id="@+id/answer_12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Er fragt, ob sie ihm sagen könne, wann der nächste Bus gefahren wäre." />
         </RadioGroup>
 
@@ -197,6 +195,7 @@
             android:text="Welches Verb ist korrekt? Wie lange können wir in der Disko bleiben? – Meine Mutter hat gesagt, dass ich um 23.00 Uhr zuhause sein __________." />
 
         <EditText
+            android:id="@+id/answerSeven"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -210,6 +209,7 @@
             android:text="Welches Wort ist richtig? Ich kann _______ Stift nicht finden. Hast du ihn gesehen?" />
 
         <EditText
+            android:id="@+id/answerEight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -223,6 +223,7 @@
             android:text="Welches Wort ist richtig? Gefällt dir mein neuer Pullover? - Ja, ich finde ______ sehr schön!" />
 
         <EditText
+            android:id="@+id/answerNine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -236,9 +237,24 @@
             android:text="Die Wohnung lag direkt an einer großen Straße, _____ wir die ganze Nacht nicht schlafen konnten." />
 
         <EditText
+            android:id="@+id/answerTen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:hint="Answer" />
+
+        <Button
+            android:id="@+id/submitAnswers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submitAnswers"/>
+
+        <Button
+            android:id="@+id/resetQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:onClick="resetQuestions"/>
     </LinearLayout>
 </ScrollView>

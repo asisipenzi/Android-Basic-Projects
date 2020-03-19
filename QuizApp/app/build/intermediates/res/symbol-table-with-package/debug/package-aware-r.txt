@@ -673,6 +673,10 @@ id add
 id alertTitle
 id all
 id always
+id answerEight
+id answerNine
+id answerSeven
+id answerTen
 id answer_1
 id answer_10
 id answer_11
@@ -750,6 +754,7 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id resetQuestions
 id right
 id right_icon
 id right_side
@@ -782,6 +787,7 @@ id src_over
 id standard
 id start
 id submenuarrow
+id submitAnswers
 id submit_area
 id tabMode
 id tag_transition_group

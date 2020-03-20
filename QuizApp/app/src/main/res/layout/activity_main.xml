@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="German A1-A2 Questions"
+            android:text="@string/header"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -25,236 +25,241 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Welcher Satz ist richtig?"
+            android:text="@string/question1"
             android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/radioGroudQuestion1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="Klaus will heute ins Kino gehen." />
+                android:text="@string/asnwer1_1" />
 
             <RadioButton
                 android:id="@+id/answer_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="Klaus will heute nicht ins Kino gehen." />
+                android:text="@string/answer1_2" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:text="Wie geht der Satz weiter. Ich möchte mit meinen Freunden in eine Kneipe gehen,..." />
+            android:text="@string/question2"
+            android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/radioGroudQuestion2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="aber isch habe kein Geld" />
+                android:text="@string/answer2_1" />
 
             <RadioButton
                 android:id="@+id/answer_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="oder wir trinken ein Bier" />
+                android:text="@string/answer2_2" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:text="Welches Wort ist richtig? Das Buch,_______du mir geschenkt hast, ist sehr spannend." />
+            android:text="@string/question3"
+            android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/radioGroudQuestion3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="der" />
+                android:text="@string/answer3_1" />
 
             <RadioButton
                 android:id="@+id/answer_6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="das" />
+                android:text="@string/answer3_2" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:text="Welcher Satz ist am höflichsten? Sie sitzen in einem Restaurant und möchten ein Glas Wasser trinken." />
+            android:text="@string/question4"
+            android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/radioGroudQuestion4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer_7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="Ich würde Sie gerne bitte, mir ein Glas Wasser zu bringen." />
+                android:text="@string/answer4_1" />
 
             <RadioButton
                 android:id="@+id/answer_8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="Würden Sie mir bitte ein Glas Wasser bringen?" />
+                android:text="@string/answer4_2" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:text="Welcher Satz hat die gleiche Bedeutung? Es ist nicht so schlimm, wenn nicht alle Antworten richtig sind." />
+            android:text="@string/question5"
+            android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/radioGroudQuestion5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer_9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="Du sollst nicht alle Aufgaben korrekt lösen." />
+                android:text="@string/answer5_1" />
 
             <RadioButton
                 android:id="@+id/answer_10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:text="Du musst nicht alle Aufgaben korrekt lösen." />
+                android:text="@string/answer5_2" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:text="Welser Satz hat die gleiche Bedeutung? Er fragt sie : 'Kannst du mir sagen, wann der nächste Bus fährt?' " />
+            android:text="@string/question6"
+            android:textSize="16sp" />
 
         <RadioGroup
+            android:id="@+id/radioGroudQuestion6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer_11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Er fragt, ob sie ihm sagen könne, wann der nächste Bus fährt." />
+                android:text="@string/answer6_1" />
 
             <RadioButton
                 android:id="@+id/answer_12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Er fragt, ob sie ihm sagen könne, wann der nächste Bus gefahren wäre." />
+                android:text="@string/asnwer6_2" />
         </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:text="Welches Verb ist korrekt? Wie lange können wir in der Disko bleiben? – Meine Mutter hat gesagt, dass ich um 23.00 Uhr zuhause sein __________." />
+            android:text="@string/question7"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/answerSeven"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:hint="Answer" />
+            android:hint="@string/answer" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
             android:layout_marginTop="10dp"
-            android:text="Welches Wort ist richtig? Ich kann _______ Stift nicht finden. Hast du ihn gesehen?" />
+            android:text="@string/question8"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/answerEight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:hint="Answer" />
+            android:hint="@string/answer" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"
-            android:text="Welches Wort ist richtig? Gefällt dir mein neuer Pullover? - Ja, ich finde ______ sehr schön!" />
+            android:text="@string/question9"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/answerNine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:hint="Answer" />
+            android:hint="@string/answer" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textSize="16dp"
-            android:text="Die Wohnung lag direkt an einer großen Straße, _____ wir die ganze Nacht nicht schlafen konnten." />
+            android:text="@string/answer10"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/answerTen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:hint="Answer" />
+            android:hint="@string/answer" />
 
-        <Button
-            android:id="@+id/submitAnswers"
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:onClick="submitAnswers"/>
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/resetQuestions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reset"
-            android:onClick="resetQuestions"/>
+            <Button
+                android:id="@+id/submitAnswers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="submitAnswers"
+                android:text="@string/submit_button" />
+
+            <Button
+                android:id="@+id/resetQuestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="resetQuestions"
+                android:text="@string/reset_button" />
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

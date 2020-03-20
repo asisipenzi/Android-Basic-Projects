@@ -754,6 +754,12 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id radioGroudQuestion1
+id radioGroudQuestion2
+id radioGroudQuestion3
+id radioGroudQuestion4
+id radioGroudQuestion5
+id radioGroudQuestion6
 id resetQuestions
 id right
 id right_icon

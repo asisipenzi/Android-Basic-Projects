@@ -1,14 +1,20 @@
 package com.example.android.quizapp;
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.TextView;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText mQuestionSeven;
+    private EditText mQuestionEight;
+    private EditText mQuestionNine;
+    private EditText mQuestionTen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,134 +23,86 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method checks if all the questions are answered
-     *
-     * @param answerSeven
-     * @param answerEight
-     * @param answerNine
-     * @param answerTen
-     * @param rightAns
-     */
-    public void incompleteAnswers(String answerSeven, String answerEight, String answerNine,
-                                  String answerTen, int rightAns) {
-
-        if (answerSeven == null || answerEight == null || answerNine == null || answerTen == null) {
-            Toast.makeText(this, "Please answer all the question.", Toast.LENGTH_LONG);
-
-        } else {
-            Toast.makeText(this, "You got " + rightAns + "Correct", Toast.LENGTH_LONG);
-        }
-
-    }
-
-    /**
-     * This method checks if all the questions are answered
+     *Method shows number of correct answers via a Toast
      */
     public void submitAnswers(View view) {
+
+        //Stores number of correct answers
         int correctAnswers = 0;
 
-        //Getting values from the RadioButtons and TextView
-        boolean checked = ((RadioButton) view).isChecked();
-        Log.v("MainActivity", "variable is: " + checked);
-        TextView questionSeven = (TextView) findViewById(R.id.answerSeven);
-        String question7 = questionSeven.getText().toString();
-
-        TextView questionEight = (TextView) findViewById(R.id.answerEight);
-        String question8 = questionEight.getText().toString();
-
-        TextView questionNine = (TextView) findViewById(R.id.answerNine);
-        String question9 = questionNine.getText().toString();
-
-        TextView questionTen = (TextView) findViewById(R.id.answerTen);
-        String question10 = questionTen.getText().toString();
-
+        //Getting values from the RadioButtons and EditText
+        RadioButton questionOne = (RadioButton) findViewById(R.id.answer_2);
+        RadioButton questionTwo = (RadioButton) findViewById(R.id.answer_3);
+        RadioButton questionThree = (RadioButton) findViewById(R.id.answer_6);
+        RadioButton questionFour = (RadioButton) findViewById(R.id.answer_8);
+        RadioButton questionFive = (RadioButton) findViewById(R.id.answer_10);
+        RadioButton questionSix = (RadioButton) findViewById(R.id.answer_11);
+        mQuestionSeven = (EditText) findViewById(R.id.answerSeven);
+        mQuestionEight = (EditText) findViewById(R.id.answerEight);
+        mQuestionNine = (EditText) findViewById(R.id.answerNine);
+        mQuestionTen = (EditText) findViewById(R.id.answerTen);
 
         //Question 1
-        switch (view.getId()) {
-            case R.id.answer_2:
-                if (checked)
-                    correctAnswers += 1;
-                break;
-            case R.id.answer_3:
-                if (checked)
-                    break;
-        }
+        if (questionOne.isChecked())
+            correctAnswers += 1;
 
         //Question 2
-        switch (view.getId()) {
-            case R.id.answer_2:
-                if (checked)
-                    correctAnswers += 1;
-                break;
-            case R.id.answer_3:
-                if (checked)
-                    break;
-        }
+        if (questionTwo.isChecked())
+            correctAnswers += 1;
 
         //Question 3
-        switch (view.getId()) {
-            case R.id.answer_2:
-                if (checked)
-                    correctAnswers += 1;
-                break;
-            case R.id.answer_3:
-                if (checked)
-                    break;
-        }
+        if (questionThree.isChecked())
+            correctAnswers += 1;
 
         //Question 4
-        switch (view.getId()) {
-            case R.id.answer_2:
-                if (checked)
-                    correctAnswers += 1;
-                break;
-            case R.id.answer_3:
-                if (checked)
-                    break;
-        }
-
+        if (questionFour.isChecked())
+            correctAnswers += 1;
 
         //Question 5
-        switch (view.getId()) {
-            case R.id.answer_2:
-                if (checked)
-                    correctAnswers += 1;
-                break;
-            case R.id.answer_3:
-                if (checked)
-                    break;
-        }
+        if (questionFive.isChecked())
+            correctAnswers += 1;
 
         //Question 6
-        switch (view.getId()) {
-            case R.id.answer_2:
-                if (checked)
-                    correctAnswers += 1;
-                break;
-            case R.id.answer_3:
-                if (checked)
-                    break;
-        }
+        if (questionSix.isChecked())
+            correctAnswers += 1;
 
         //Question 7
-        if (questionSeven.getText().toString() == "soll")
+        if (mQuestionSeven.getText().toString().toLowerCase().equals("soll"))
             correctAnswers += 1;
 
         //Question 8
-        if (questionEight.getText().toString() == "meinem")
+        if (mQuestionEight.getText().toString().toLowerCase().equals("meinem"))
             correctAnswers += 1;
 
         //Question 9
-        if (questionNine.getText().toString() == "ihn")
+        if (mQuestionNine.getText().toString().toLowerCase().equals("ihn"))
             correctAnswers += 1;
 
         //Question 10
-        if (questionTen.getText().toString() == "so daa")
+        if (mQuestionTen.getText().toString().toLowerCase().equals("so dass"))
             correctAnswers += 1;
 
-        incompleteAnswers(question7, question8, question9, question10, correctAnswers);
+        Toast.makeText(this, "You got " + correctAnswers + " Correct", Toast.LENGTH_LONG).show();
     }
 
     public void resetQuestions(View view) {
+        //Get RadioGroup values
+        RadioGroup groupQuestionOne = (RadioGroup)findViewById(R.id.radioGroudQuestion1);
+        RadioGroup groupQuestionTwo = (RadioGroup)findViewById(R.id.radioGroudQuestion2);
+        RadioGroup groupQuestionThree = (RadioGroup)findViewById(R.id.radioGroudQuestion3);
+        RadioGroup groupQuestionFour = (RadioGroup)findViewById(R.id.radioGroudQuestion4);
+        RadioGroup groupQuestionFive = (RadioGroup)findViewById(R.id.radioGroudQuestion5);
+        RadioGroup groupQuestionSix = (RadioGroup)findViewById(R.id.radioGroudQuestion6);
+
+        groupQuestionOne.clearCheck();
+        groupQuestionTwo.clearCheck();
+        groupQuestionThree.clearCheck();
+        groupQuestionFour.clearCheck();
+        groupQuestionFive.clearCheck();
+        groupQuestionSix.clearCheck();
+        mQuestionSeven.setText("");
+        mQuestionEight.setText("");
+        mQuestionNine.setText("");
+        mQuestionTen.setText("");
     }
 }

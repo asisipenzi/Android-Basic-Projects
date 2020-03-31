@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="20dp"
+            android:src="@drawable/music" />
+
+        <TextView
+            style="@style/ActivitiesLayout"
+            android:text="@string/artist_name_song_playing_duration" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ActivitiesLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ActivitiesLayout"
+            android:text="@string/main_activity_details" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ActivitiesLayout"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/song_details" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_store" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_list" />
+    </LinearLayout>
+
+</LinearLayout>

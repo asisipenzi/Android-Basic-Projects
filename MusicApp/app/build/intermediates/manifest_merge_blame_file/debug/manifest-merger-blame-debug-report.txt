@@ -11,7 +11,7 @@
 9-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:5:5-26:19
+11-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:5:5-27:19
 12        android:allowBackup="true"
 12-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
@@ -27,35 +27,38 @@
 18-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:10:9-35
 19        android:theme="@style/AppTheme" >
 19-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:11:9-40
-20        <activity android:name="com.example.android.musicapp.Store" />
-20-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:12:9-52
-20-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:12:19-40
-21        <activity
-21-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:13:9-15:44
-22            android:name="com.example.android.musicapp.DetailsActivity"
-22-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:14:13-44
-23            android:label="Song Details" />
-23-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:15:13-41
-24        <activity
-24-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:16:9-18:41
-25            android:name="com.example.android.musicapp.ListActivity"
-25-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:17:13-41
-26            android:label="List Song" />
-26-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:18:13-38
-27        <activity android:name="com.example.android.musicapp.MainActivity" >
-27-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:19:9-25:20
-27-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:19:19-47
-28            <intent-filter>
-28-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:20:13-24:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:21:17-69
-29-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:21:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:23:17-77
-31-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:23:27-74
-32            </intent-filter>
-33        </activity>
-34    </application>
-35
-36</manifest>
+20        <activity
+20-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:12:9-13:60
+21            android:name="com.example.android.musicapp.StoreActivity"
+21-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:12:19-48
+22            android:label="@string/music_store" />
+22-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:13:13-48
+23        <activity
+23-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:14:9-16:52
+24            android:name="com.example.android.musicapp.DetailsActivity"
+24-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:15:13-44
+25            android:label="@string/song_details" />
+25-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:16:13-49
+26        <activity
+26-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:17:9-19:50
+27            android:name="com.example.android.musicapp.ListActivity"
+27-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:18:13-41
+28            android:label="@string/music_list" />
+28-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:19:13-47
+29        <activity android:name="com.example.android.musicapp.MainActivity" >
+29-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:20:9-26:20
+29-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:20:19-47
+30            <intent-filter>
+30-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:21:13-25:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:22:17-69
+31-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:22:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:24:17-77
+33-->/home/andrew/Documents/Programming/Courses/Java/UDACITY-Android.Basics.Nanodegree.by.Google.v1.0.0/Exercise.Files/MusicApp/app/src/main/AndroidManifest.xml:24:27-74
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

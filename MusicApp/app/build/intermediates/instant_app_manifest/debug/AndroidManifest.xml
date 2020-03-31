@@ -18,13 +18,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.android.musicapp.Store" />
+        <activity
+            android:name="com.example.android.musicapp.StoreActivity"
+            android:label="@string/music_store" />
         <activity
             android:name="com.example.android.musicapp.DetailsActivity"
-            android:label="Song Details" />
+            android:label="@string/song_details" />
         <activity
             android:name="com.example.android.musicapp.ListActivity"
-            android:label="List Song" />
+            android:label="@string/music_list" />
         <activity android:name="com.example.android.musicapp.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

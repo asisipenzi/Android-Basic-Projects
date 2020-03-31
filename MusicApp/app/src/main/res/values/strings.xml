@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="list_activity_details">This activity shows the list of artists, albums and playlist. When the user searches for a song,playlist or artist list below will populate as the letters are typed.</string>
+    <string name="now_playing">Go to Now Playing</string>
+    <string name="search">Search</string>
+    <string name="artist_name_song_playing_duration">Artist Name, Song playing, Duration</string>
+    <string name="main_activity_details">This activity shows the playing song and artist details. Controls for the song will be included at the bottom of the screen, below the buttons.</string>
+    <string name="song_details">Song Details</string>
+    <string name="music_store">Music Store</string>
+    <string name="music_list">Music List</string>
+    <string name="details_activity_details">This activity shows the details of a selected song or artist. There will be a need to receive information pertaining to the selected song in either the Now Playing activity or Song List Activity.</string>
+    <string name="store_activity_details">This activity allows you to buy songs and provide payment options</string>
+</resources>

@@ -39,16 +39,19 @@
         android:layout_gravity="center_horizontal">
 
         <Button
+            android:id="@+id/song_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/song_details" />
 
         <Button
+            android:id="@+id/music_store"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/music_store" />
 
         <Button
+            android:id="@+id/music_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/music_list" />

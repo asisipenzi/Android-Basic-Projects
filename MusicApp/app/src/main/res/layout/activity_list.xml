@@ -24,6 +24,7 @@
             android:text="@string/list_activity_details" />
 
         <Button
+            android:id="@+id/playing_song"
             style="@style/ActivitiesLayout"
             android:text="@string/now_playing" />
     </LinearLayout>

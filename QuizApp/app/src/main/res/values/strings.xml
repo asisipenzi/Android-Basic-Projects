@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="header">German A1-A2 Questions</string>
+    <string name="question1">Welcher Satz ist richtig?</string>
+    <string name="asnwer1_1">Klaus will heute ins Kino gehen.</string>
+    <string name="answer1_2">Klaus will heute nicht ins Kino gehen.</string>
+    <string name="question2">Wie geht der Satz weiter. Ich möchte mit meinen Freunden in eine Kneipe gehen,...</string>
+    <string name="answer2_1">aber isch habe kein Geld</string>
+    <string name="answer2_2">oder wir trinken ein Bier</string>
+    <string name="question3">Welches Wort ist richtig? Das Buch,_______du mir geschenkt hast, ist sehr spannend.</string>
+    <string name="answer3_1">der</string>
+    <string name="answer3_2">das</string>
+    <string name="question4">Welcher Satz ist am höflichsten? Sie sitzen in einem Restaurant und möchten ein Glas Wasser trinken.</string>
+    <string name="answer4_1">Ich würde Sie gerne bitte, mir ein Glas Wasser zu bringen.</string>
+    <string name="answer4_2">Würden Sie mir bitte ein Glas Wasser bringen?</string>
+    <string name="question5">Welcher Satz hat die gleiche Bedeutung? Es ist nicht so schlimm, wenn nicht alle Antworten richtig sind.</string>
+    <string name="answer5_1">Du sollst nicht alle Aufgaben korrekt lösen.</string>
+    <string name="answer5_2">Du musst nicht alle Aufgaben korrekt lösen.</string>
+    <string name="question6">Welser Satz hat die gleiche Bedeutung? Er fragt sie : \'Kannst du mir sagen, wann der nächste Bus fährt?\'</string>
+    <string name="answer6_1">Er fragt, ob sie ihm sagen könne, wann der nächste Bus fährt.</string>
+    <string name="asnwer6_2">Er fragt, ob sie ihm sagen könne, wann der nächste Bus gefahren wäre.</string>
+    <string name="question7">Welches Verb ist korrekt? Wie lange können wir in der Disko bleiben? – Meine Mutter hat gesagt, dass ich um 23.00 Uhr zuhause sein __________.</string>
+    <string name="answer">Answer</string>
+    <string name="question8">Welches Wort ist richtig? Ich kann _______ Stift nicht finden. Hast du ihn gesehen?</string>
+    <string name="question9">Welches Wort ist richtig? Gefällt dir mein neuer Pullover? - Ja, ich finde ______ sehr schön!</string>
+    <string name="answer10">Die Wohnung lag direkt an einer großen Straße, _____ wir die ganze Nacht nicht schlafen konnten.</string>
+    <string name="submit_button">Submit</string>
+    <string name="reset_button">Reset</string>
+</resources>

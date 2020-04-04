@@ -14,7 +14,7 @@ import java.util.List;
 public class WordAdapter extends ArrayAdapter<Word> {
 
     public WordAdapter(@NonNull Context context, @NonNull List<Word> words) {
-        super(context, 0, (List<Word>) words);
+        super(context, 0, words);
     }
 
     @NonNull
@@ -23,10 +23,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
         View listItemView = convertView;
 
         // Check if the existing view is being reused, otherwise inflate the view
-
         if (listItemView == null)
-            listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+            listItemView = LayoutInflater
+                    .from(getContext())
+                    .inflate(R.layout.list_item, parent, false);
 
         // Get the current position of the word
         Word currentWord = getItem(position);

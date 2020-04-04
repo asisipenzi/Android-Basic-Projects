@@ -13,13 +13,32 @@ public class Word {
     /** Default translation for the word **/
     private String mMiworkTranslation;
 
+    /** Image for the word translation **/
+    private int mImageResourceId;
+
+    /**
+     *
+     * @param defaultTranslation
+     * @param miworkTranslation
+     */
     public Word(String defaultTranslation, String miworkTranslation) {
         mDefaultTranslation = defaultTranslation;
         mMiworkTranslation = miworkTranslation;
     }
 
     /**
-     * Get the Default translation of the word
+     *
+     * @param defaultTranslation
+     * @param miworkTranslation
+     * @param imageResourceId
+     */
+    public Word(String defaultTranslation, String miworkTranslation, int imageResourceId) {
+        mDefaultTranslation = defaultTranslation;
+        mMiworkTranslation = miworkTranslation;
+        mImageResourceId = imageResourceId;
+    }
+    /**
+     * Return the Default translation of the word
      *
      * @return mDefaultTranslation
      */
@@ -27,12 +46,23 @@ public class Word {
         return mDefaultTranslation;
     }
 
+
+
     /**
-     * Get the Miwok translation of the word
+     * Return the Miwok translation of the word
      *
      * @return mMiworkTranslation
      */
     public String getMiworkTranslation() {
         return mMiworkTranslation;
+    }
+
+    /**
+     * Return the imageReasource from the drawable folder
+     *
+     * @return mImageResource
+     */
+    public int getImageResource() {
+        return mImageResourceId;
     }
 }

@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class WordAdapter extends ArrayAdapter<Word> {
@@ -31,18 +33,24 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the current position of the word
         Word currentWord = getItem(position);
 
-        // Find the default word translation TextView and set the word from the
+        // Find the default word translation TextView and set the word in the
         // current position in the ArrayList to the TextView
 
         TextView defaultWord = (TextView) listItemView.findViewById(R.id.default_text_view);
         defaultWord.setText(currentWord.getDefaultTranslation());
 
-        // Find the miwork word translation TextView and set the word from the
+        // Find the miwork word translation TextView and set the word in the
         // current position in the ArrayList to the TextView
 
         TextView miworkWord = (TextView) listItemView.findViewById(R.id.miwok_text_view);
         miworkWord.setText(currentWord.getMiworkTranslation());
 
+
+        // Find the ImageView and set the image in the
+        // current position in the ArrayList to the ImageView
+
+        ImageView iconView = (ImageView) listItemView.findViewById(R.id.image_view);
+        iconView.setImageResource(currentWord.getImageResource());
 
         return listItemView;
     }

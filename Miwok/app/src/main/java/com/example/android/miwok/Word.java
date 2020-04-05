@@ -7,17 +7,24 @@ package com.example.android.miwok;
 
 public class Word {
 
-    /** Default translation for the word **/
+    /**
+     * Default translation for the word
+     **/
     private String mDefaultTranslation;
 
-    /** Default translation for the word **/
+    /**
+     * Default translation for the word
+     **/
     private String mMiworkTranslation;
 
-    /** Image for the word translation **/
-    private int mImageResourceId;
+    /**
+     * Image for the word translation
+     **/
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
-     *
      * @param defaultTranslation
      * @param miworkTranslation
      */
@@ -27,7 +34,6 @@ public class Word {
     }
 
     /**
-     *
      * @param defaultTranslation
      * @param miworkTranslation
      * @param imageResourceId
@@ -37,6 +43,7 @@ public class Word {
         mMiworkTranslation = miworkTranslation;
         mImageResourceId = imageResourceId;
     }
+
     /**
      * Return the Default translation of the word
      *
@@ -45,7 +52,6 @@ public class Word {
     public String getDefaultTranslation() {
         return mDefaultTranslation;
     }
-
 
 
     /**
@@ -64,5 +70,9 @@ public class Word {
      */
     public int getImageResource() {
         return mImageResourceId;
+    }
+
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 }

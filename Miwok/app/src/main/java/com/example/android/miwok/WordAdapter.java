@@ -15,7 +15,7 @@ import java.util.List;
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
-    // Resource ID for the backgroung color for the list of words
+    // Resource ID for the background color for the list of words
     private int mColorResourceId;
 
     public WordAdapter(@NonNull Context context, @NonNull List<Word> words, int colorResourceId) {
